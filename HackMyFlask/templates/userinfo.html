@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Welcome, {{ username }}!</h2>
+    {% if file_url %}
+        {% set avatar_url = file_url %}
+    {% else %}
+        {% set avatar_url = '/static/flask.jpg' %}
+    {% endif %}
+    <img src="{{ avatar_url }}" alt="User Avatar" style="width: 150px; height: 200px;">
+    {% for info in user %}
+        <h2>{{ info }}</h2>
+    {% endfor %}
+    <div class="button-container" style="margin-top: 20px;">
+        <a href="/welcome" class="button">Back</a>
+    </div>
+{% endblock %}
