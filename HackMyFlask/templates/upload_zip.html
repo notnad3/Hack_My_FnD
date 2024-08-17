@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload File</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            text-align: left; /* 使表单元素左对齐 */
+            width: 400px; /* 设置固定宽度，可以根据需要调整 */
+            max-width: 90%; /* 保证在小屏幕上不会太宽 */
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+                footer {
+            position: fixed;
+            bottom: 0;
+            left:0;
+            width: 100%;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 12px 0;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+
+</head>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Upload Your Zipfile Here!</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <label for="file">Choose a zip file to upload:</label>
+            <input type="file" id="file" name="file" required><br>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+</body>
+<footer>
+
+        <small>&copy; 2024 <a href="https://notnad3.github.io/" target="_blank" rel="noopener noreferrer">notbad3</a></small>
+        <br>
+
+</footer>
+</html>
