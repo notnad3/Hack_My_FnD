@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Deleted</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        p {
+            font-size: 18px;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            left:0;
+            width: 100%;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 12px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>User Deleted</h1>
+
+        <div class="container">
+            <p>The user <strong>{{ username }}</strong> has been successfully deleted.</p>
+            <a href="/" class="button">Return to Home</a>
+        </div>
+    </header>
+
+    <footer>
+        <small>&copy; 2024 <a href="https://notnad3.github.io/" target="_blank" rel="noopener noreferrer">notbad3</a></small>
+    </footer>
+</body>
+</html>

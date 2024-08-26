@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Welcome, {{ username }}!</h2>
+    <img src="{{ avatar_url }}" alt="User Avatar" style="width: 150px; height: 200px;">
+    <div class="button-container" style="margin-top: 20px;">
+        <a href="/upload" class="button">Upload Your Pic</a>
+        <a href="/view_posts" class="button">View Posts</a>
+        <a href="/userinfo" class="button">Userinfo</a>
+        <a href="/changepasswd" class="button">Change Password Now</a>
+        <a href="/logout" class="button">Logout</a>
+
+    </div>
+{% endblock %}
